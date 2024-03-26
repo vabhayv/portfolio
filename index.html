@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>My Portfolio</h1>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my cybersecurity portfolio! I am a passionate cybersecurity enthusiast dedicated to protecting digital assets and combating cyber threats.</p>
+            <p>With a background in network security, cryptography, and ethical hacking, I strive to stay updated with the latest trends and techniques in cybersecurity.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Network Security</li>
+                <li>Cryptography</li>
+                <li>Penetration Testing</li>
+                <li>Incident Response</li>
+                <li>Security Compliance</li>
+            </ul>
+        </div>
+    </section>
+    <section id="certificates">
+    <div class="container">
+        <h2><a href="certificates.html">Certificates</a></h2>
+        <div class="slideshow-container">
+            <div class="certificate-slide fade">
+                <img src="certificate1.jpg" alt="Certificate 1">
+                <div class="certificate-description">
+                    <h3>Certificate Title 1</h3>
+                    <p>This certificate is awarded for completing course XYZ on Blockchain Security.</p>
+                </div>
+            </div>
+            <div class="certificate-slide fade">
+                <img src="certificate2.jpg" alt="Certificate 2">
+                <div class="certificate-description">
+                    <h3>Certificate Title 2</h3>
+                    <p>This certificate is awarded for participating in conference ABC on Cryptography.</p>
+                </div>
+            </div>
+            <!-- Add more certificate slides as needed -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+</section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Check out some of my cybersecurity projects:</p>
+            <ul>
+                <li>Secure Web Application Development</li>
+                <li>Network Vulnerability Assessment</li>
+                <li>Blockchain Security Research</li>
+                <li>Malware Analysis and Reverse Engineering</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cybersecurity Portfolio</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

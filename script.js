@@ -7,32 +7,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
+
+        // Close the navigation menu by removing the 'nav-active' class
+        document.querySelector('.nav-links').classList.remove('nav-active');
     });
 });
 
-// Initialize slideshow
+// Slideshow functionality
 let slideIndex = 0;
-showSlides(); // Call the showSlides function to start the slideshow
+showSlides();
 
-// Function to display slides
 function showSlides() {
-    let i;
     let slides = document.getElementsByClassName("certificate-slide");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
     slideIndex++;
     if (slideIndex > slides.length) {
-        slideIndex = 1; // Reset slide index if it exceeds the number of slides
+        slideIndex = 1;
     }
-    slides[slideIndex - 1].style.display = "block"; // Display the current slide
-    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
-// Function to change slides
 function changeSlide(n) {
     slideIndex += n;
-    showSlides(); // Call showSlides function to display the updated slide
+    showSlides();
 }
 
 // Toggle navigation menu for mobile devices

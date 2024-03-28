@@ -17,8 +17,8 @@ body {
 
 /* Header styles */
 header {
-    background-color: #000080; /* Hacker's blue */
-    color: #ff0000; /* Hacker's red */
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
     text-align: center;
 }
@@ -41,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ff0000; /* Hacker's red */
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease; /* Smooth transition effect */
@@ -49,7 +49,7 @@ nav ul li a {
 
 /* Hover effect on navigation links */
 nav ul li a:hover {
-    color: #000080; /* Hacker's blue */
+    color: #ffd700; /* Change color on hover */
 }
 
 /* Section styles */
@@ -70,8 +70,8 @@ section ul {
 
 /* Footer styles */
 footer {
-    background-color: #000080; /* Hacker's blue */
-    color: #ff0000; /* Hacker's red */
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
     text-align: center;
 }
@@ -81,7 +81,6 @@ footer p {
     padding: 0;
     font-size: 14px;
 }
-
 /* CSS for Certificate Slideshow */
 .slideshow-container {
     position: relative;
@@ -126,7 +125,6 @@ footer p {
         opacity: 1;
     }
 }
-
 /* Base styles for navigation */
 .container {
     max-width: 1200px;

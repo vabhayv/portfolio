@@ -5,8 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #f2f2f2;
 }
 
 /* Container styles */
@@ -18,8 +17,8 @@ body {
 
 /* Header styles */
 header {
-    background-color: #0B6623;
-    color: #fff;
+    background-color: #000080; /* Hacker's blue */
+    color: #ff0000; /* Hacker's red */
     padding: 20px 0;
     text-align: center;
 }
@@ -42,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ff0000; /* Hacker's red */
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease; /* Smooth transition effect */
@@ -50,7 +49,7 @@ nav ul li a {
 
 /* Hover effect on navigation links */
 nav ul li a:hover {
-    color: #ffd700; /* Change color on hover */
+    color: #000080; /* Hacker's blue */
 }
 
 /* Section styles */
@@ -61,7 +60,7 @@ section {
 
 section h2 {
     margin-bottom: 30px;
-    color: #fff; /* Update color */
+    color: #333;
 }
 
 section ul {
@@ -69,36 +68,10 @@ section ul {
     padding: 0;
 }
 
-/* Skills section styles */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.skill {
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
-    background-color: #006400; /* Dark green */
-    border-radius: 5px;
-    text-align: left;
-}
-
-.skill h3 {
-    margin-top: 0;
-    color: #fff;
-}
-
-.skill p {
-    margin-bottom: 0;
-    color: #fff;
-}
-
 /* Footer styles */
 footer {
-    background-color: #0B6623;
-    color: #fff;
+    background-color: #000080; /* Hacker's blue */
+    color: #ff0000; /* Hacker's red */
     padding: 20px 0;
     text-align: center;
 }
@@ -109,7 +82,7 @@ footer p {
     font-size: 14px;
 }
 
-/* Certificate Slideshow styles */
+/* CSS for Certificate Slideshow */
 .slideshow-container {
     position: relative;
     max-width: 100%;
@@ -155,6 +128,50 @@ footer p {
 }
 
 /* Base styles for navigation */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* Hamburger menu styles */
 .menu-toggle {
     display: none; /* Hide by default on desktop */
     flex-direction: column;
@@ -182,6 +199,17 @@ footer p {
     cursor: pointer;
     padding: 10px;
 }
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Rest of your existing styles */
+
+
 
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {

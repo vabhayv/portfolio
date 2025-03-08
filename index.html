@@ -1,133 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhay's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>My Portfolio</title>
 </head>
 <body>
+<!-- Header -->
 
-<header>
-    <div class="container">
-        <div class="logo">
-            <h1>Cyber Security Enthusiast</h1>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<section id="header">
+<div class="header container">
+<div class="nav-bar">
+<div class="portfolio"><a href="#main"><h1>Welcome to my <span>Website</span></h1></a>
+</div>
+<div class="nav-list">
+<div class="hamburger">
+<div class="bar"></div></div>
+<ul>
+<li><a href="#main" data-after="Home">Home</a></li>
+<li><a href="#work" data-after="Work">Work</a></li>
+<li><a href="#projects" data-after="Projects">Projects</a></li>
+<li><a href="#about" data-after="About Me">About Me</a></li>
+<li><a href="#contact" data-after="Contact Me">Contact Me</a></li>
 
-<section id="skills">
-    <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skill">
-                <h3>Network Security</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="skill">
-                <h3>Cryptography</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="skill">
-                <h3>Penetration Testing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="skill">
-                <h3>Incident Response</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="skill">
-                <h3>Security Compliance</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-    </div>
+</ul>
+</div>
+</div>
+</div>
 </section>
 
-<section id="certificates">
-    <div class="container">
-        <h2>Certificates</h2>
-        <div class="slideshow-container">
-            <div class="certificate-slide fade">
-                <img src="TCP_IP.jpeg" alt="Certificate 1" style="width: 100%; max-width: 500px; height: auto;" >
-                <div class="certificate-description">
-                    <h3>Certificate Title 1</h3>
-                    <p>This certificate is awarded for completing course XYZ on Blockchain Security.</p>
-                </div>
-            </div>
-            <div class="certificate-slide fade">
-                <img src="certificate2.jpg" alt="Certificate 2">
-                <div class="certificate-description">
-                    <h3>Certificate Title 2</h3>
-                    <p>This certificate is awarded for participating in conference ABC on Cryptography.</p>
-                </div>
-            </div>
-            <!-- Add more certificate slides as needed -->
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
-    </div>
+<!-- End Header -->
+<!-- Main Section -->
+ <section id="main">
+ <div class="main container">
+ <div>
+ <h1>Hello everyone,<span></span></h1>
+ <h1>My name is<span></span></h1>
+ <h1>Abhay Saxena.<span></span></h1>
+ <!-- <a href="#" type="button" class="cta">Button</a> -->
+ </div>
+ </div>
+ </section>
+<!-- End Main Section -->
+<!-- Work Section -->
+<section id="work">
+<div class="work container">
+<div class="work-top">
+<h1 class="section-title"><span>W</span>ork</h1>
+<p>Field in which I can help you.</p>
+</div>
+<div class="work-bottom">
+<div class="work-item">
+<div class="icon"><img src="https://img.icons8.com/nolan/64/designer.png"/></div>
+<h2>Web Designer</h2>
+<p>I can make a websites for you in affordable price.</p>
+</div>
+
+<div class="work-item">
+<div class="icon"><img
+src="https://img.icons8.com/external-phatplus-lineal-color-phatplus/64/000000/external-seller-corporation-phatplus-lineal-color-phatplus.png"/></div>
+<h2>RDP seller</h2>
+<p>I can provide you RDP (Remote Desktop Protocol) any RAM at low cost.</p>
+</div>
+
+<div class="work-item">
+<div class="icon"><img
+src="https://img.icons8.com/external-filled-outline-wichaiwi/64/000000/external-freelancer-new-normal-after-covid-19-filled-outline-wichaiwi.png"/></div>
+<h2>Freelancer</h2>
+<p>I can make Logos, Channel Art (Youtube Banner), Thumbnails etc.</p></div>
+
+<div class="work-item">
+<div class="icon"><img
+src="https://img.icons8.com/doodle/48/000000/youtube-play--v1.png"/></div>
+<h2>Youtuber</h2>
+<p>I am a small youtuber, I upload chess gameplay on my youtube channel where you can learn new moves in chess from my opponents.</p></div>
+
+
+</div>
+</div>
 </section>
+<!-- End Work Section -->
+
+<!-- Projects Section -->
 
 <section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-        <p>Check out some of my cybersecurity projects:</p>
-        <ul>
-            <li>Secure Web Application Development</li>
-            <li>Network Vulnerability Assessment</li>
-            <li>Blockchain Security Research</li>
-            <li>Malware Analysis and Reverse Engineering</li>
-        </ul>
-    </div>
+<div class="projects container">
+<div class="projects-header">
+<h1 class="section-title"><span>P</span>rojects</h1>
+</div>
+
+<div class="all-projects">
+
+<div class="project-item">
+<div class="project-info">
+<h1>Portfolio Website</h1>
+<h2>Using HTML & CSS</h2>
+<p>This website is my most recent project</p>
+</div>
+<div class="project-img">
+<img src="#" alt="img">
+</div>
+</div>
+
+<div class="project-item">
+<div class="project-info">
+<h1>I will update soon</h1>
+<h2>soon</h2>
+<p>for sure</p>
+</div>
+<div class="project-img">
+<img src="#" alt="img">
+</div>
+</div>
+
+<div class="project-item">
+<div class="project-info">
+<h1>I will update soon</h1>
+<h2>soon</h2>
+<p>for sure</p>
+</div>
+<div class="project-img">
+<img src="#" alt="img">
+</div>
+</div>
+
+<div class="project-item">
+<div class="project-info">
+<h1>I will update soon</h1>
+<h2>soon</h2>
+<p>for sure</p>
+</div>
+<div class="project-img">
+<img src="#" alt="img">
+</div>
+</div>
+
+<div class="project-item">
+<div class="project-info">
+<h1>I will upload soon</h1>
+<h2>soon</h2>
+<p>for sure</p>
+</div>
+<div class="project-img">
+<img src="#" alt="img">
+</div>
+</div>
+
+</div>
+</div>
 </section>
+
+
+<!-- End Project Section -->
+
+
+<!-- About Section -->
 
 <section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Welcome to my cybersecurity portfolio! I am a passionate cybersecurity enthusiast dedicated to protecting digital assets and combating cyber threats.</p>
-        <p>With a background in network security, cryptography, and ethical hacking, I strive to stay updated with the latest trends and techniques in cybersecurity.</p>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <div class="contact-method">
-                <h3>LinkedIn</h3>
-                <p>www.linkedin.com/in/vabhayv</p>
-            </div>
-            <div class="contact-method">
-                <h3>Gmail</h3>
-                <p>workwithsaxenaabhay@gmail.com</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Cybersecurity Portfolio</p>
-    </div>
-</footer>
-<script src="script.js"></script>
-</body>
-</html>

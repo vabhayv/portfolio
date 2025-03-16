@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
         gsap.to("body", { opacity: 0, duration: 0.3, onComplete: () => {
             body.classList.toggle("dark");
 
-            // Save theme preference
             if (body.classList.contains("dark")) {
                 localStorage.setItem("theme", "dark");
                 themeToggle.textContent = "☀️";
@@ -36,6 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("mouseleave", () => {
             gsap.to(button, { scale: 1, duration: 0.2, ease: "power1.in" });
         });
+    });
+
+    // ScrollReveal Animation for Certificates
+    ScrollReveal().reveal('.cert-card', {
+        duration: 800,
+        distance: "50px",
+        origin: "bottom",
+        easing: "ease-in-out",
+        reset: false
     });
 
     // Page Transition Effect

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white transition-all">
+
+    <!-- Page Transition Overlay -->
+    <div id="transition-overlay" class="fixed inset-0 bg-black flex items-center justify-center opacity-0 pointer-events-none z-50">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Projects</h1>
+        <a href="index.html" class="text-blue-500">Home</a>
+    </nav>
+
+    <!-- Projects List -->
+    <section class="mt-20 p-5">
+        <h2 class="text-3xl font-bold">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <div class="p-5 bg-gray-100 dark:bg-gray-800 rounded shadow-lg project-card">
+                <h3 class="text-xl font-bold">Fire Buzzer System</h3>
+                <p>IoT-based fire detection system.</p>
+            </div>
+            <div class="p-5 bg-gray-100 dark:bg-gray-800 rounded shadow-lg project-card">
+                <h3 class="text-xl font-bold">Indian Hangman Game</h3>
+                <p>Python-based word guessing game.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

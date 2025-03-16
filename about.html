@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white transition-all">
+
+    <!-- Page Transition Overlay -->
+    <div id="transition-overlay" class="fixed inset-0 bg-black flex items-center justify-center opacity-0 pointer-events-none z-50">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">About Me</h1>
+        <a href="index.html" class="text-blue-500">Home</a>
+    </nav>
+
+    <!-- About Section -->
+    <section class="mt-20 p-5 text-center">
+        <h2 class="text-3xl font-bold">Hello, I'm <span class="text-blue-500">[Your Name]</span></h2>
+        <p class="mt-2">Web Developer | Cybersecurity Enthusiast | Learning Blockchain</p>
+        
+        <div class="mt-5">
+            <h3 class="text-2xl font-bold">Skills</h3>
+            <ul class="mt-2 list-disc list-inside">
+                <li>Python & C Programming</li>
+                <li>Web Development (HTML, CSS, JavaScript, TailwindCSS)</li>
+                <li>Cybersecurity Basics</li>
+                <li>Learning Blockchain</li>
+                <li>GSAP Animations</li>
+            </ul>
+        </div>
+
+        <a href="contact.html" class="mt-5 inline-block bg-blue-500 text-white px-5 py-2 rounded btn">Contact Me</a>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

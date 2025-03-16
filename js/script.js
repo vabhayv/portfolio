@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("transition-overlay");
     const themeToggle = document.getElementById("theme-toggle");
     const body = document.body;
+    const buttons = document.querySelectorAll(".btn");
 
     // Load theme from localStorage
     if (localStorage.getItem("theme") === "dark") {
@@ -10,9 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     themeToggle.addEventListener("click", () => {
-        // Add a quick fade transition
         gsap.to("body", { opacity: 0, duration: 0.3, onComplete: () => {
-            body.classList.toggle("dark"); // Toggle Dark Mode
+            body.classList.toggle("dark");
 
             // Save theme preference
             if (body.classList.contains("dark")) {
@@ -23,20 +23,29 @@ document.addEventListener("DOMContentLoaded", function () {
                 themeToggle.textContent = "🌙";
             }
 
-            // Fade back in
             gsap.to("body", { opacity: 1, duration: 0.3 });
         }});
     });
 
-    // Function to start transition effect
+    // GSAP Button Hover Effect
+    buttons.forEach(button => {
+        button.addEventListener("mouseenter", () => {
+            gsap.to(button, { scale: 1.1, duration: 0.2, ease: "power1.out" });
+        });
+
+        button.addEventListener("mouseleave", () => {
+            gsap.to(button, { scale: 1, duration: 0.2, ease: "power1.in" });
+        });
+    });
+
+    // Page Transition Effect
     function startTransition(url) {
-        overlay.style.pointerEvents = "auto";  // Enable interaction with overlay
+        overlay.style.pointerEvents = "auto";
         gsap.to(overlay, { opacity: 1, duration: 0.5, onComplete: () => {
             window.location.href = url;
         }});
     }
 
-    // Add transition to all internal links
     document.querySelectorAll("a").forEach(link => {
         if (link.getAttribute("href") && !link.getAttribute("href").startsWith("#")) {
             link.addEventListener("click", function (e) {
@@ -47,9 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Page Load Animation (Fade-in effect)
     gsap.from(overlay, { opacity: 1, duration: 0.5, onComplete: () => {
-        overlay.style.pointerEvents = "none";  // Disable interaction once loaded
+        overlay.style.pointerEvents = "none";
     }});
 });
-

@@ -1,242 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<!-- Header -->
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white transition-all">
+    
+    <!-- Page Transition Overlay -->
+    <div id="transition-overlay" class="fixed inset-0 bg-black flex items-center justify-center opacity-0 pointer-events-none z-50">
+        <div class="loader"></div>
+    </div>
 
-<section id="header">
-<div class="header container">
-<div class="nav-bar">
-<div class="portfolio"><a href="#main"><h1>Welcome to my <span>Website</span></h1></a>
-</div>
-<div class="nav-list">
-<div class="hamburger">
-<div class="bar"></div></div>
-<ul>
-<li><a href="#main" data-after="Home">Home</a></li>
-<li><a href="#work" data-after="Work">Work</a></li>
-<li><a href="#projects" data-after="Projects">Projects</a></li>
-<li><a href="#about" data-after="About Me">About Me</a></li>
-<li><a href="#contact" data-after="Contact Me">Contact Me</a></li>
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">My Portfolio</h1>
+        <button id="theme-toggle" class="text-2xl">🌙</button>
+    </nav>
 
-</ul>
-</div>
-</div>
-</div>
-</section>
+    <!-- Hero Section -->
+    <section class="text-center mt-20">
+        <h2 class="text-4xl font-bold hero-text">Hi, I'm <span class="text-blue-500">[Your Name]</span></h2>
+        <p class="mt-2 hero-text">Web Developer | Cybersecurity Enthusiast | YouTuber</p>
+        <a href="projects.html" class="mt-4 inline-block bg-blue-500 text-white px-5 py-2 rounded btn">View My Work</a>
+    </section>
 
-<!-- End Header -->
-<!-- Main Section -->
- <section id="main">
- <div class="main container">
- <div>
- <h1>Hello everyone,<span></span></h1>
- <h1>My name is<span></span></h1>
- <h1>Abhay<span></span></h1>
- <!-- <a href="#" type="button" class="cta">Button</a> -->
- </div>
- </div>
- </section>
-<!-- End Main Section -->
-<!-- Work Section -->
-<section id="work">
-<div class="work container">
-<div class="work-top">
-<h1 class="section-title"><span>W</span>ork</h1>
-<p>Field in which I can help you.</p>
-</div>
-<div class="work-bottom">
-<div class="work-item">
-<div class="icon"><img src="https://img.icons8.com/nolan/64/designer.png"/></div>
-<h2>Web Designer</h2>
-<p>I can make a websites for you in affordable price.</p>
-</div>
-
-<div class="work-item">
-<div class="icon"><img
-src="https://img.icons8.com/external-phatplus-lineal-color-phatplus/64/000000/external-seller-corporation-phatplus-lineal-color-phatplus.png"/></div>
-<h2>RDP seller</h2>
-<p>I can provide you RDP (Remote Desktop Protocol) any RAM at low cost.</p>
-</div>
-
-<div class="work-item">
-<div class="icon"><img
-src="https://img.icons8.com/external-filled-outline-wichaiwi/64/000000/external-freelancer-new-normal-after-covid-19-filled-outline-wichaiwi.png"/></div>
-<h2>Freelancer</h2>
-<p>I can make Logos, Channel Art (Youtube Banner), Thumbnails etc.</p></div>
-
-<div class="work-item">
-<div class="icon"><img
-src="https://img.icons8.com/doodle/48/000000/youtube-play--v1.png"/></div>
-<h2>Youtuber</h2>
-<p>I am a small youtuber, I upload gameplay video & shorts and do livestreams.</p></div>
-
-
-</div>
-</div>
-</section>
-<!-- End Work Section -->
-
-<!-- Projects Section -->
-
-<section id="projects">
-<div class="projects container">
-<div class="projects-header">
-<h1 class="section-title"><span>P</span>rojects</h1>
-</div>
-
-<div class="all-projects">
-
-<div class="project-item">
-<div class="project-info">
-<h1>Portfolio Website</h1>
-<h2>Using HTML & CSS</h2>
-<p>This website is my most recent project</p>
-</div>
-<div class="project-img">
-<img src="#" alt="img">
-</div>
-</div>
-
-<div class="project-item">
-<div class="project-info">
-<h1>I will update soon</h1>
-<h2>soon</h2>
-<p>for sure</p>
-</div>
-<div class="project-img">
-<img src="#" alt="img">
-</div>
-</div>
-
-<div class="project-item">
-<div class="project-info">
-<h1>I will update soon</h1>
-<h2>soon</h2>
-<p>for sure</p>
-</div>
-<div class="project-img">
-<img src="#" alt="img">
-</div>
-</div>
-
-<div class="project-item">
-<div class="project-info">
-<h1>I will update soon</h1>
-<h2>soon</h2>
-<p>for sure</p>
-</div>
-<div class="project-img">
-<img src="#" alt="img">
-</div>
-</div>
-
-<div class="project-item">
-<div class="project-info">
-<h1>I will upload soon</h1>
-<h2>soon</h2>
-<p>for sure</p>
-</div>
-<div class="project-img">
-<img src="#" alt="img">
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- End Project Section -->
-
-
-<!-- About Section -->
-
-<section id="about">
- <div class="about container">
-<div class="col-left">
-<div class="about-img">
-<img src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/1600/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png"/>
-</div>
-</div>
-<div class="col-right">
-<h1 class="section-title">About <span>Me</span></h1>
-<h2>Here's my intro</h2>
-<p>Hello everyone, My name is Abhay.   <br>I am from Vidisha, Madhya Pradesh.<br>
-Currently I am pursuing my B.Tech degree in Computer Science from Sagar Institute Of Science and Technology (SISTec) Gandhi Nagar, Bhopal. <br>
-My hobbies are playing chess, making origami, Reading Graphic Novel (Manga), and Collecting stones. <br>
-My aim is to become an Ethical Hacker and Serve the Nation.</p>
-<!-- <a href="#" class="cta">My Resume</a>  -->
-
-</div>
-</div>
-</section>
-
-<!-- End About Section -->
-
-
-<!-- Contact Section -->
-
-<section id="contact">
-<div class="contact container">
-<div><h1 class="section-title">Contact <span>Me</span></h1></div>
-<div class="contact-items">
-<div class="contact-item">
-<div class="icon"><img src="https://img.icons8.com/clouds/100/000000/gmail.png"/></div>
-<div class="contact-info">
-<h1>Gmail for Queries</h1>
-<h2>yourfriendlyabhaysaxena@gmail.com</h2>
-</div>
-</div>
-
-<div class="contact-item">
-<div class="icon"><img 
-src="https://img.icons8.com/color/96/000000/gmail-new.png"/></div>
-<div class="contact-info">
-<h1>Gmail for Buisness</h1>
-<h2>workwithsaxenaabhay@gmail.com</h2></div>
-</div>
-
-
-</div>
-</div>
-</section>
-
-<!-- End Contact Section -->
-
-<!-- Footer Section -->
-
-<section id="footer">
-<div class="footer container">
-<div class="thankyou"><h1>Thankyou for <span>visiting</span></h1></div>
-<div class="social-icon">
-
-<div class="social-item">
-<a href="https://youtube.com/@blazegunnergaming?si=Ln3wj-OZh9bnIwt9" target="_blank"><img src="https://img.icons8.com/doodle/48/000000/youtube-play--v1.png"/></a>
-</div>
-
-<div class="social-item">
-<a href="https://www.linkedin.com/in/abhay-lodhi-5190a521b?original_referer=" target="_blank"><img 
-src="https://img.icons8.com/color/60/000000/linkedin-circled--v1.png"/></a></div>
-
-<div class="social-item">
-<a 
-href="https://github.com/Vabhayv" target="_blank"><img
-src="https://img.icons8.com/doodle/60/000000/github--v1.png"/></a></div>
-
-</div>
-</div>
-</section>
-
-<!-- End Footer Section -->
-
-<script src="script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

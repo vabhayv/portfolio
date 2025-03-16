@@ -1,1 +1,30 @@
+/* Loading Spinner */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-top: 5px solid black; /* Light Mode */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Dark Mode Spinner */
+.dark .loader {
+    border-top: 5px solid white; /* Dark Mode */
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Smooth Transitions */
+body {
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#transition-overlay {
+    transition: opacity 0.5s ease-in-out;
+}
 

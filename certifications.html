@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollReveal/4.0.9/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white transition-all">
+
+    <!-- Page Transition Overlay -->
+    <div id="transition-overlay" class="fixed inset-0 bg-black flex items-center justify-center opacity-0 pointer-events-none z-50">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Certifications</h1>
+        <div>
+            <a href="index.html" class="text-blue-500 mr-4">Home</a>
+            <a href="about.html" class="text-blue-500">About</a>
+        </div>
+    </nav>
+
+    <!-- Certifications Section -->
+    <section class="mt-20 p-5 text-center">
+        <h2 class="text-3xl font-bold">My Certifications</h2>
+        <p class="mt-2">Here are some of my achievements:</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <!-- Certificate 1 -->
+            <div class="cert-card p-5 bg-gray-100 dark:bg-gray-800 rounded shadow-lg">
+                <img src="assets/certificates/certificate1.jpg" alt="Certificate 1" class="w-full rounded">
+                <h3 class="text-xl font-bold mt-2">Cybersecurity Fundamentals</h3>
+                <p>Issued by XYZ Academy</p>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="cert-card p-5 bg-gray-100 dark:bg-gray-800 rounded shadow-lg">
+                <img src="assets/certificates/certificate2.jpg" alt="Certificate 2" class="w-full rounded">
+                <h3 class="text-xl font-bold mt-2">Python for Beginners</h3>
+                <p>Issued by ABC Institute</p>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="cert-card p-5 bg-gray-100 dark:bg-gray-800 rounded shadow-lg">
+                <img src="assets/certificates/certificate3.jpg" alt="Certificate 3" class="w-full rounded">
+                <h3 class="text-xl font-bold mt-2">Blockchain Basics</h3>
+                <p>Issued by DEF University</p>
+            </div>
+        </div>
+    </section>
+
+    <script s

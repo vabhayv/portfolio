@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- here i am creating a nav bar -->
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="youalreadyundermygenjutsu.jpg" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Certificates</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+<!-- this will be my home page -->
+
+        <div class="header-text">
+            <h1>{Hello},<br>I am <span>Abhay</span> </h1>
+            <p>Enthusiastic Fresher</p>
+        </div>
+    </div>
+</div>
+
+<!-- this is my about seciton -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"><img src="about.png" alt=""></div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a B.Tech Graduate, I am a fresher with full of passion and energy ready to work in real world and use all my knowlegdge.</p>
+            
+            <!-- there are my three main tab -->
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+            </div>
+
+            <!-- details about tab -->
+
+                <!-- skill tab -->
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Python Developer</span><br>Intermediate Python Level</li>
+                    <li><span>Cyber Security</span><br>knowledge of linux, ctf, etc</li>
+                    <li><span>Web Developer</span><br>UI/UX, Html, Css, Js</li>
+                </ul>
+            </div>
+
+                <!-- education tab -->
+            
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech (2021-2025)- 6.75 CGPA</span><br>Computer Science & Engg.</li>
+                        <li><span>12th (2020-2021)- 75.6%</span><br>PCM</li>
+                        <li><span>10th (2018-2019)- 76.6%</span><br>M.P. Board</li>
+                    </ul>
+                </div>
+
+                <!-- experience tab -->
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    <li><span>Ikshana Core Member</span><br>from sep 2021- jan 2025<br>teach, workshops</li>
+                    <li><span>Coding Ninjas</span><br>from jul 2022- dec 2022<br>Ninja Enterprenuer</li>
+                    <li><span>TechGig</span><br>from jul 2022-dec 2022<br>Campus Ambassador</li>
+                    </ul>
+                </div>
+
+                <!-- hobby tab -->
+                
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                    <li><span>Playing Chess</span><br>1200+ elo on chess.com</li>
+                    <li><span>Solving Rubik's Cube</span><br>Max Time: 3 Min & Min Time:19 Sec</li>
+                    <li><span>Reading Manga</span><br>Read More Than 300 Mangas</li>
+                    <li><span>Watching Anime</span><br>Watched 200+ Anime Till Now</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------- my projects ------------------->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+
+
+            <div >
+                <h2>This Portfolio Website</h2>
+                <p>My recent project is this website, I worked on it really hard learn so many things 
+                   from different-different places and implement on this project, i used html,css,java
+                   script and ai and all
+                </p>
+                <a href="#">github-link</a>
+            </div>
+
+            <div>
+                <h2>Encrypter-Decrypter</h2>
+                <p> Using Python I worked on it really hard learn so many things 
+                   from different-different places and implement on this project, i used html,css,java
+                   script and ai and all
+                </p>
+                <a href="#">github-link</a>
+            </div>
+
+            <div>
+                <h2>Indian Hangman Game</h2>
+                <p>Game for fun, I worked on it really hard learn so many things 
+                   from different-different places and implement on this project, i used html,css,java
+                   script and ai and all
+                </p>
+                <a href="#">github-link</a>
+            </div>
+
+            
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- java script -->
+
+<script src="script.js"></script>
+</body>
+</html>

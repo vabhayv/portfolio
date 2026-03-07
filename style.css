@@ -154,7 +154,7 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 .projects-list div h2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -195,3 +195,4 @@ nav ul li a:hover::after{
     display: block;
     transition: transform 0.5s;
 }
+
